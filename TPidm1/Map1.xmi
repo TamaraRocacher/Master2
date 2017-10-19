@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<maps:Map xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:maps="maps"
+    xsi:schemaLocation="maps My.ecore"
+    name="myMap">
+  <roads xsi:type="maps:Pedestrian"
+      name="pedSt"
+      lenght="20"
+      border="//@spaces.0"/>
+  <roads xsi:type="maps:Street"
+      name="wisteria"
+      lenght="10"
+      meet="//@roads.0"/>
+  <roads xsi:type="maps:Street"
+      name="otherSt"
+      lenght="20"
+      border="//@spaces.1"/>
+  <spaces xsi:type="maps:Square"
+      name="round"
+      borderedBy="//@roads.0"/>
+  <spaces xsi:type="maps:Garden"
+      name="hespéride"
+      borderedBy="//@roads.2"/>
+</maps:Map>
